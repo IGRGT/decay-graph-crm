@@ -18,7 +18,7 @@ Listing contacts:
    5  Casey Brown                     closed
 ```
 
-Staleness view — who you haven't talked to lately:
+Staleness view (who you haven't talked to lately):
 
 ```
 Alex Chen            engaged    1.8 days ago

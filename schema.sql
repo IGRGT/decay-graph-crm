@@ -1,4 +1,4 @@
--- Decay Graph CRM — database schema
+-- Decay Graph CRM database schema
 
 CREATE TABLE IF NOT EXISTS contacts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

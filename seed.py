@@ -1,4 +1,4 @@
-# Sample data for testing. NOT real contacts — all names and info are made up.
+# Sample data for testing. NOT real contacts. All names and info are made up.
 # Run this after `python3 db.py` to populate the database with mock rows,
 # so `python3 cli.py` has something to show.
 
@@ -20,8 +20,8 @@ INTERACTIONS = [
     (2, "email", "Sent pricing deck", "2026-04-21"),
     (3, "meeting", "Weekly sync", "2026-04-15"),
     (3, "call", "Follow-up on proposal", "2026-04-18"),
-    (4, "email", "Last outreach — no reply since", "2026-02-10"),
-    (5, "note", "Closed — signed contract", "2026-03-05"),
+    (4, "email", "Last outreach, no reply since", "2026-02-10"),
+    (5, "note", "Closed, signed contract", "2026-03-05"),
 ]
 
 
