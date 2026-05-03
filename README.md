@@ -32,7 +32,7 @@ Sample data from `seed.py`, clearly fictional.
 
 ## Status
 
-Day 1. Schema in place, database setup works, CLI lists contacts. Actively being built.
+Day 2. Insert contacts and log interactions from the command line. Actively being built.
 
 ## Stack
 
@@ -43,17 +43,26 @@ Python and SQLite. Nothing else yet.
 ```
 python3 db.py       # create the database
 python3 seed.py     # (optional) load sample mock data so the CLI has something to show
-python3 cli.py      # list contacts
+
+python3 cli.py list                                          # list all contacts
+python3 cli.py insert "Maria Garcia" --source "conference"  # add a contact
+python3 cli.py log 1 meeting --note "caught up on Q2 plans" # log an interaction
 ```
 
 `seed.py` inserts clearly fake sample rows (Alex Chen, Jamie Rivera, etc.) for testing and demos. Skip it if you want to start empty.
 
+Insert options: `--status` (new/engaged/active/dormant/closed), `--email`, `--phone`, `--source`, `--notes`
+
+Log kinds: `call`, `email`, `meeting`, `message`, `note`. Use `--date YYYY-MM-DD` to back-date.
+
 ## Roadmap
 
 - [x] Schema and database setup
-- [ ] Add, update, and delete contacts
-- [ ] Log interactions (calls, emails, meetings)
+- [x] Add contacts from the CLI
+- [x] Log interactions (calls, emails, meetings)
+- [ ] Show contact detail + interaction history
 - [ ] Staleness report (who needs follow-up)
+- [ ] Update contact status
 - [ ] Graph visualization
 - [ ] Lead import from public sources (pluggable interface)
 
